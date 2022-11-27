@@ -5,22 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+<style>
+    .mainhead{
+        background-color:  rgb(191, 191, 191);
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+    div{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    main{
+        background-color: blanchedalmond;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        align-content: space-between;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+        width: 100%;
+    }
+    .small{
+        background-color: burlywood;
+        padding: 10px;
+        margin: 10px;
+        width: 50%;
+    }
+    .big{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: burlywood;
+        padding: 10px;
+        margin: 10px;
+    }
+    aside{
+        background-color:rgb(157, 216, 185);
+        width: 40%;
+        text-align: center;
+        padding: 20px;
+    }
+    footer{
+        background-color: rgb(191, 191, 191);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto
+    }
+    .foot{
+        background-color: azure;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
 </head>
 <body>
-    <header>Шапка страницы</header> 
-    <main>Основная часть
-        <p>Ещё 1</p>
-        <p>Ещё 2</p>
-        <p>Ещё 3</p>
-    </main>
-    <section>
-        Боковая область
-    </section>
+    <header class="mainhead">Шапка страницы</header> 
+    <div>
+        <main> <p class="head">Основная часть</p>  
+            <section>
+                <p class="small">Ещё 1</p>
+                <p class="small">Ещё 2</p>
+            </section>
+            <p class="big">Ещё 3</p>
+        </main>
+        <aside>
+            Боковая область
+        </aside>
+    </div>
     <footer>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <p class="foot">Секция футера 1</p>
+        <p class="foot">Секция футера 2</p>
+        <p class="foot">Секция футера 3</p>
+        <p class="foot">Секция футера 4</p>
     </footer>
 </body>
 </html>
